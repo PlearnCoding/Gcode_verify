@@ -1,0 +1,205 @@
+
+G00 การเดินเป็นแนวเส้นตรง เป็นการเคลื่อนที่แบบเร็ว ใช้ในกรณีต้องการให้เคลื่อนที่จากจุดหนึ่งไปยังอีกจุดหนึ่งอย่ารวดเร็ว ในลักษณะที่ไม่มีการตัดชิ้นงาน, ความเร็วในการเคลื่อนที่สามารถควบคุมได้โดย Rapid
+G01 เป็นการเคลื่อนที่แบบเส้นตรง ส่วนมากใช้ในการลักษณะการกินชิ้นงาน สามารถควบคุมความเร็วโดย Speed และ Feed
+G02 การเคลื่อนที่เป็นแนวโค้งตามรัศมี มีทิศทางตามเข็มนาฬิกา
+G03 การเคลื่อนที่ในแนวเส้นโค้งตามรัศมี มีทิศทางทวนเข็มนาฬิกา
+G04 เป็นคำสั่งให้หยุดทำงานชั่วขณะในลักษณะของการหน่วง (Dwell)
+G09 หยุดการทำงาน
+G10 การ Setting Data ของการเดินด้วยความเร็ว
+G11 การ Setting Data ของการเดินเป็นเส้นตรง
+G12 การเดินเส้นโค้งแบบตามเข็มนาฬิกา
+G13 การเดินเส้นโค้งแบบทวนเข็มนาฬิกา
+G15 การยกเลิกคำสั่งเดินเส้นโค้ง
+G16 การเดินโดยใช้คำสั่งการเดินโค้ง
+G17 การเลือกพื้นผิวบนระนาบ X Y
+G18 การเลือกพื้นผิวบนระนาบ ZX
+G19 การเลือกพื้นผิวบนระนาบ ZY
+G20 เป็นการกำหนดหน่วยวัดระบบนิ้ว (ค่าที่ป้อนเป็นนิ้ว)
+G21 เป็นการกำหนดหน่วยวัดเป็นระบบเมตริก (ค่าที่ป้อนเป็นมิลลิเมตร)
+G23 การยกเลิกหรือปิดตรวจสอบระยะเผื่อของชิ้นงาน
+G25 ปิดการตรวจสอบวัดเพลาของหัวกัด
+G26 เปิดการตรวจสอบวัดเพลาของหัวกัด
+G27 การตรวจสอบการกลับสู่จุดที่ใช้อ้างอิง
+G28 การกลับสู่จุดที่ใช้ในการอ้างอิงของเครื่อง
+G29 การกลับจุดที่ใช้อ้างอิงของเครื่อง
+G30 การกลับจุดอ้างอิงของเครื่องจากการกำหนดข้อมูลในเครื่อง
+G31 การข้ามคำสั่งเกี่ยวกับจุดอ้างอิง
+G33 การเดินกัดทำเกลียว
+G40 การยกเลิกค่าชดเชยรัศมีของ Tool
+G41 การกำหนดค่าชดเชยรัศมีของ Tool (offset) ไปทางด้านซ้าย
+G42 การกำหนดค่าชดเชยรัศมีของ Tool (offset) ไปทางด้านขวา
+G43 การกำหนดความยาวของมีดกัดที่มีค่าบวก
+G44 การกำหนดความยาวของมีดกัดที่มีค่าลบ
+G49 ยกเลิกค่าความยาวของมีดกัด
+G50 ยกเลิกมาตราส่วน
+G51 กำหนดมาตราส่วน
+G54 กำหนดตำแหน่งงานในข้อมูลที่ 1
+G55 กำหนดตำแหนงงานในข้อมูลที่ 2
+G56 กำหนดตำแหนงงานในข้อมูลที่ 3
+G57 กำหนดตำแหนงงานในข้อมูลที่ 4
+G58 กำหนดตำแหนงงานในข้อมูลที่ 5
+G59 กำหนดตำแหนงงานในข้อมูลที่ 6
+G63 เลือกหมวดของการทำเกลียวแบบ Tap
+G64 เลือกขนาดของกาตัดเฉือนด้วยด้วยการกัด
+G65 การเรียก Marco โปรแกรมมาใช้งาน
+G67 ยกเลิก Macro โปรแกรม
+G68 การลอกแบบงานโดยหมุนรอบจุดอ้างอิง
+G69 ยกเลิกการลอกแบบงาน
+G73 การเจาะแบบหยุดให้คายเศษ
+G74 การทำเกลียวด้วยการ Tap
+G76 การคว้านรูปแบบละเอียด
+G80 ยกเลิกการเจาะ การคว้านในแบบต่างๆ
+G81 การเจาะแบบไม่ยก (Spot Drilling)
+G82 การเจาะแบบไม่ยก (Counter Boring)
+G83 การเจาะลึกแบบยกคายเศษ
+G84 การทำเกลียวในแบบ Tapping
+G85-89 การคว้านรูปแบบคว้านหยาบ
+G90 มีดเคลื่อนบนจุดใดๆ วัดระยะจากจุดศูนย์งานทุกครั้ง (Absolute System)
+G91 มีดเคลื่อนบนจุดใดๆ วัดระยะจากจุดเริ่มงานทุกครั้ง (Increment System)
+G92 การเปลี่ยนจุดศูนย์ของงานที่ใช้อ้างอิง
+G93 อัตราการป้อนตรงข้ามกับหน่วยของเวลา
+G94 อัตราการป้อน หน่วยเป็น ระยะทาง/เวลา
+G95 อัตราการป้อน หน่วยเป็น ระยะทาง/รอบ
+G96 ความเร็วของเพลามีดกัด เมตร/นาที
+G97 ความเร็วของเพลามีดกัด รอบ/นาที
+G98 การเปลี่ยนตำแหน่งเท่ากับค่า G43
+G99 การยกเปลี่ยนตำแหน่งเท่ากับค่า R
+
+ชุดคำสั่ง M-code จะเป็นคำสั่งในการควบคุม Function ต่างๆ ของโปรแกรมและเครื่องจักร ดังนี้
+
+M00 Program Stop หยุดการทำงานของโปรแกรม
+M01 Option Stop หยุดการทำงานชั่วคราว (ต้องกดปุ่ม Option Stop ที่เครื่องด้วย)
+M02 จบการทำงานของโปรแกรม
+M30 จบการทำงานของโปรแกรม
+M03 หมุนหัว Spindle ตามเข็มนาฬิกา
+M04 หมุนหัว Spindle ทวนเข็มนาฬิกา
+M05 หยุดการหมุนของหัว Spindle
+M06 เปลี่ยน Tool
+M07 Thru Spindle
+M08 เปิดน้ำหล่อเย็น (Coolant On)
+M09 ปิดน้ำหล่อเย็น (Coolant Off)
+M11 Set tool carousel position to 1(ATC Tool Changer only)
+M19 Cycle positioning (not for spindle orientation) หัวอยู่ในตำแหน่งเปลี่ยน tool
+M20 Does nothing                     Standard.
+M22 Chip conveyor toggle On/Off Option
+M29 Rigid Tap  M29 Sxxxx in block prior to G84
+M41 Low gear select
+M42 High ear select
+M48 100% Spindle speed override forced
+M49 Release
+M60 A Axis brake On
+
+###########################################################
+======================= Non Operational =======================
+CODE          PARAMETERS      DESCRIPTION
+N#                            Define line number (oldschool)
+O<name>                       Define program name
+======================= Motion =======================
+  (X Y Z A B C U V W apply to all motions)
+CODE          PARAMETERS      DESCRIPTION
+;G0                            Rapid Move
+;G1                            Linear Move
+;G2, G3        I J K or R, P   Arc Move
+;G4            P               Dwell
+;G5            I J P Q         Cubic Spline
+;G33           K               Spindle Synchronized Motion
+;G80                           Cancel Canned Cycle
+======================= Canned Cycles =======================
+     (X Y Z or U V W apply to canned cycles, depending on active plane)
+CODE              PARAMETERS          DESCRIPTION
+;G81               R L (P)             Drilling Cycle
+;G82               R L (P)             Drilling Cycle, Dwell
+;G83               R L Q               Drilling Cycle, Peck
+;G73               R L Q               Drilling Cycle, Chip Breaking
+;G85               R L (P)             Boring Cycle, Feed Out
+;G89               R L (P)             Boring Cycle, Dwell, Feed Out
+;G76               P Z I J R K Q H L E Threading Cycle
+======================= Distance Mode =======================
+CODE              PARAMETERS          DESCRIPTION
+;G90, G91                              Distance Mode
+;G7                                    Lathe Diameter Mode
+;G8                                    Lathe Radius Mode
+======================= Feed Rate Mode =======================
+CODE              PARAMETERS          DESCRIPTION
+;G93, G94, G95                         Feed Rate Mode
+======================= Spindle Control =======================
+CODE              PARAMETERS          DESCRIPTION
+;M3, M4, M5        S                   Spindle Control
+;M19                                   Orient Spindle
+;G96, G97          S D                 Spindle Control Mode
+======================= Coolant =======================
+CODE              PARAMETERS          DESCRIPTION
+;M7, M8, M9                            Coolant Control
+======================= Tool Length =======================
+CODE              PARAMETERS          DESCRIPTION
+;G43               H                   Tool Length Offset
+;G49                                   Cancel Tool Length Compensation
+======================= Stopping (Program Control) =======================
+CODE              PARAMETERS          DESCRIPTION
+;M0, M1                                Program Pause
+;M2, M30                               Program End
+;M60                                   Pallet Change Pause
+======================= Units =======================
+CODE              PARAMETERS          DESCRIPTION
+;G20, G21                              Units
+======================= Plane Selection =======================
+      (affects G2, G3, G81-G89, G40-G42)
+CODE              PARAMETERS          DESCRIPTION
+;G17 - G19                             Plane Select
+======================= Cutter Radius Compensation =======================
+CODE              PARAMETERS          DESCRIPTION
+;G40                                   Compensation Off
+;G41,G42           D                   Cutter Compensation
+
+======================= Path Control Mode =======================
+CODE              PARAMETERS          DESCRIPTION
+;G61                                   Exact Path Mode
+;G64               P Q                 Path Blending
+======================= Return Mode in Canned Cycles =======================
+CODE              PARAMETERS          DESCRIPTION
+;G98                                   Canned Cycle Return Level to previous
+;G99                                   Canned Cycle Return to the level set by R
+======================= Other Modal Codes =======================
+CODE              PARAMETERS          DESCRIPTION
+;F                                     Set Feed Rate
+;S                                     Set Spindle Speed
+;T                                     Select Tool
+;M48, M49                              Speed and Feed Override Control
+;M50               P0 (off) or P1 (on) Feed Override Control
+;M51               P0 (off) or P1 (on) Spindle Speed Override Control
+;M52               P0 (off) or P1 (on) Adaptive Feed Control
+;M53               P0 (off) or P1 (on) Feed Stop Control
+;G54-G59.3                             Select Coordinate System
+======================= Flow-control Codes =======================
+CODE              PARAMETERS          DESCRIPTION
+;o sub                                 Subroutines, sub/endsub call        [unsupported]
+;o while                               Looping, while/endwhile do/while    [unsupported]
+;o if                                  Conditional, if/else/endif          [unsupported]
+;o repeat                              Repeat a loop of code               [unsupported]
+;[]                                    Indirection                         [unsupported]
+;o call                                Call named file                     [unsupported]
+;M70                                   Save modal state                    [unsupported]
+;M71                                   Invalidate stored state             [unsupported]
+;M72                                   Restore modal state                 [unsupported]
+;M73                                   Save and Auto-restore modal state   [unsupported]
+======================= Input/Output Codes =======================
+CODE              PARAMETERS          DESCRIPTION
+;M62 - M65         P                   Digital Output Control
+;M66               P E L Q             Wait on Input
+;M67               T                   Analog Output, Synchronized
+;M68               T                   Analog Output, Immediate
+======================= Non-modal Codes =======================
+CODE              PARAMETERS          DESCRIPTION
+;M6                T                   Tool Change
+;M61               Q                   Set Current Tool
+;G10 L1            P Q R               Set Tool Table
+;G10 L10           P                   Set Tool Table
+;G10 L11           P                   Set Tool Table
+;G10 L2            P R ABCXYZ          Set Coordinate System
+;G10 L20           P ABCXYZ            Set Coordinate System
+;G28, G28.1                            Go/Set Predefined Position
+;G30, G30.1                            Go/Set Predefined Position
+;G53                                   Move in Machine Coordinates
+;G92                                   Coordinate System Offset
+;M101 - M199       P Q                 User Defined Commands
+
